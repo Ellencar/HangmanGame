@@ -1,0 +1,30 @@
+<!--
+Ellen Carey Final Project Hangman
+computer randomly chooses word from a dictionary, 
+displays letters as buttons to choose.
+Draws the hangman for wrong answers. You get 7 guesses.
+index page.
+-->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+    </head>
+    <body>
+        <h1>HANGMMAN</h1>
+        <div id = "game">
+            
+            <canvas id = "hangman" height = "350" width = "300"></canvas>
+            <h2 id = "answer"></h2>
+            <h2 id = "guesses"></h2>
+            <script src = "hangman.js"></script>
+            <h3 id = "intro">Click a letter to start guessing!</h3>
+            <h4 id = "hint"></h4>
+            <button id = "hintbtn" type = "button" onclick="hint()">Click here for a hint!</button>
+        </div>
+    
+    </body>
+
+
+</html>
